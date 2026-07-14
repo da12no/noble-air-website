@@ -356,10 +356,11 @@
     @media (min-width: 769px) { .float-call { font-size: 16px; padding: 13px 28px; bottom: 32px; } }
 
     /* ===== SCROLL TO TOP ===== */
-    .scroll-top { position: fixed; bottom: 24px; right: 24px; width: 44px; height: 44px; background: var(--orange); color: #fff; border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s; box-shadow: 0 4px 16px rgba(212,84,26,0.5); z-index: 50; }
+    .scroll-top { position: fixed; bottom: 24px; right: 24px; width: 44px; height: 44px; background: var(--navy); color: #fff; border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s; box-shadow: 0 4px 16px rgba(26,46,90,0.4); z-index: 50; }
     .scroll-top.visible { opacity: 1; pointer-events: auto; }
     .scroll-top:hover { transform: translateY(-3px); }
     .scroll-top svg { width: 20px; height: 20px; }
+    @media (max-width: 768px) { .scroll-top { bottom: 96px; right: 16px; width: 40px; height: 40px; } }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 1024px) {
