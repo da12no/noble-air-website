@@ -403,6 +403,11 @@
       /* Hero */
       .hero { padding: 44px 0 52px; }
       .hero h1 { font-size: 34px; }
+      /* Hero trust items: tighten up, smaller font so long strings don't blow out */
+      .hero-trust { gap: 10px 16px; }
+      .trust-item { font-size: 11px; }
+      /* Why badge: allow wrapping so long text doesn't overflow */
+      .why-badge { white-space: normal; text-align: center; justify-content: center; }
       /* CTA banner */
       .cta-banner { padding: 48px 0; }
       .cta-banner-btns a { width: 100%; justify-content: center; }
@@ -413,6 +418,8 @@
       /* FAQ */
       .faq-inner { gap: 32px; }
     }
+    /* Area items are now links — add hover state */
+    a.area-item:hover { border-color: var(--orange); color: var(--orange); background: rgba(204,61,26,0.04); }
   </style>
 </head>
 <body>
